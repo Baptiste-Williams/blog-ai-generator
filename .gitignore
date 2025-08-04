@@ -1,25 +1,50 @@
-*.log
-.DS_Store
+# Laravel-specific
+/vendor/
+/node_modules/
 .env
-.env.backup
-.env.production
-.phpactor.json
+.env.*
 .phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
-Homestead.json
+.phpunit.cache
 Homestead.yaml
+Homestead.json
+storage/*.key
+storage/oauth-private.key
+storage/oauth-public.key
+storage/pail/
+public/storage/
+public/hot
+public/build
+/public/mix-manifest.json
+
+# IDE and editor folders
+/.idea/
+/.vscode/
+/.fleet/
+/.nova/
+/.zed/
+
+# OS-specific
+.DS_Store
 Thumbs.db
-.env
+
+# Log files
+*.log
+
+# PHP tools
+auth.json
+.phpactor.json
+
+# Misc
+composer.lock
+yarn.lock
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+
+# Optional: ignore screenshots or demo assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.webm
